@@ -1,0 +1,28 @@
+<div>
+   <h1>Please fill the below details</h1>
+</div>
+<div> Please Fill All the details!! to enale submit button    </div>
+<br>
+<form #reg="ngForm" (ngSubmit)="submit()">
+    <div>
+        <label>Enter your name:</label><br>
+        <input (keyup)="doCheck()" type=text name="name" [(ngModel)]="name" required>
+        
+    </div><br>
+    <div>
+        <label>Enter your mail Id:</label><br>
+        <input   (keyup)="doCheck()" type=text name="mailId" [(ngModel)]="mailId">
+    </div><br>
+    <div>
+        <label>Enter your Phone number:</label><br>
+        <input  (keyup)="doCheck()" type=text name="number" [(ngModel)]="number" >
+    </div><br>
+    <div>
+        <label>Enter your Address:</label><br>
+        <input type=text name="address" (keyup)="doCheck()" [(ngModel)]="address">
+    </div><br>
+
+    <div>
+        <button id="submitButton" >Submit</button>
+    </div>
+</form>
